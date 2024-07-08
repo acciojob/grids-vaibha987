@@ -1,78 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Specifications</title>
-    <!-- Bootstrap CSS (v4.6.0) -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        /* Additional custom styling */
-        .container {
-            border: 5px solid rgb(4, 255, 4);
-            background-color: rgb(41, 0, 0);
-            padding: 20px;
-        }
-        .row {
-            border: 5px solid rgb(255, 188, 188);
-            height: 200px;
-            margin-bottom: 20px; /* spacing between rows */
-        }
-        .col {
-            border: 2px dotted rgb(38, 38, 43);
-        }
-        /* Specific column background colors */
-        .col.teal-bg {
-            background-color: teal;
-        }
-        .col.thistle-bg {
-            background-color: thistle;
-        }
-        .col.tomato-bg {
-            background-color: tomato;
-        }
-        .col.turquoise-bg {
-            background-color: turquoise;
-        }
-        .col.violet-bg {
-            background-color: violet;
-        }
-        .col.yellowgreen-bg {
-            background-color: yellowgreen;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout with Bootstrap</title>
+<!-- Bootstrap CSS (assuming Bootstrap 4 is used based on the provided example) -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    /* Additional inline styles as per the specifications */
+    .container {
+        width: 600px;
+        border: 5px solid rgb(4, 255, 4);
+        background-color: rgb(41, 0, 0);
+        padding: 20px; /* Optional padding for better spacing */
+    }
+    .row {
+        border: 5px solid rgb(255, 188, 188);
+        height: 200px;
+        margin-bottom: 20px; /* Optional margin for better spacing */
+    }
+    .col {
+        border: 2px dotted rgb(38, 38, 43);
+    }
+    .row1-col1 {
+        background-color: teal;
+    }
+    .row1-col2 {
+        background-color: thistle;
+    }
+    .row2-col1 {
+        background-color: tomato;
+    }
+    .row2-col2 {
+        background-color: turquoise;
+    }
+    .row3-col1 {
+        background-color: violet;
+    }
+    .row3-col2 {
+        background-color: yellowgreen;
+    }
+</style>
 </head>
 <body>
-
-<div class="container" style="max-width: 600px;">
-
+<div class="container">
     <!-- Row 1 -->
     <div class="row">
-        <!-- Medium: 1/3 + 2/3 -->
-        <div class="col-md-4 col-6 teal-bg">1/3</div>
-        <div class="col-md-8 col-6 thistle-bg">2/3</div>
+        <div class="col-md-4 col-sm-6 row1-col1">Column 1</div>
+        <div class="col-md-8 col-sm-6 row1-col2">Column 2</div>
     </div>
 
     <!-- Row 2 -->
     <div class="row">
-        <!-- Medium: 1/3 offset by 2 + 1/3 -->
-        <div class="col-md-4 offset-md-2 col-6 tomato-bg">1/3</div>
-        <div class="col-md-4 col-6 turquoise-bg">1/3</div>
-        <!-- Empty space between columns -->
-        <div class="col-md-2 d-md-none d-block"></div> <!-- Visible only on small screens -->
+        <div class="col-md-4 offset-md-2 col-sm-6 row2-col1">Column 1</div>
+        <div class="col-md-4 col-sm-6 row2-col2">Column 2</div>
     </div>
 
     <!-- Row 3 -->
-    <div class="row align-items-center">
-        <!-- Medium: 1/3 + 1/3, centered -->
-        <div class="col-md-4 col-6 text-center violet-bg">1/3</div>
-        <div class="col-md-4 col-6 text-center yellowgreen-bg">1/3</div>
+    <div class="row">
+        <div class="col-md-4 col-sm-6 mx-auto row3-col1">Column 1</div>
+        <div class="col-md-4 col-sm-6 mx-auto row3-col2">Column 2</div>
     </div>
-
 </div>
 
-<!-- Bootstrap JS (v4.5.2), required for Bootstrap CSS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-
+<!-- Bootstrap JS (optional, if needed) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
