@@ -17,27 +17,30 @@
     .row {
         border: 5px solid rgb(255, 188, 188);
         height: 200px;
-        margin-bottom: 20px; /* Optional margin for better spacing */
+        margin-bottom: 20px;
+		justify-content:center;
+		justify-content:between;
+		/* Optional margin for better spacing */
     }
     .col {
         border: 2px dotted rgb(38, 38, 43);
     }
-    .row1-col1 {
+    .r1c1 {
         background-color: teal;
     }
-    .row1-col2 {
+    .r1c2 {
         background-color: thistle;
     }
-    .row2-col1 {
+    .r2c1 {
         background-color: tomato;
     }
-    .row2-col2 {
+    .r2c2 {
         background-color: turquoise;
     }
-    .row3-col1 {
+    .r3c1 {
         background-color: violet;
     }
-    .row3-col2 {
+    .r3c2 {
         background-color: yellowgreen;
     }
 </style>
@@ -46,20 +49,20 @@
 <div class="container">
     <!-- Row 1 -->
     <div class="row">
-        <div class="col-md-4 col-sm-6 row1-col1">Column 1</div>
-        <div class="col-md-8 col-sm-6 row1-col2">Column 2</div>
+        <div class="col-md-4 col-sm-6 r1c1">Column 1</div>
+        <div class="col-md-8 col-sm-6 r1c2">Column 2</div>
     </div>
 
     <!-- Row 2 -->
     <div class="row">
-        <div class="col-md-4 offset-md-2 col-sm-6 row2-col1">Column 1</div>
-        <div class="col-md-4 col-sm-6 row2-col2">Column 2</div>
+        <div class="col-md-4 offset-md-2 col-sm-6 r2c1">Column 1</div>
+        <div class="col-md-4 col-sm-6 r2c2">Column 2</div>
     </div>
 
     <!-- Row 3 -->
     <div class="row">
-        <div class="col-md-4 col-sm-6 mx-auto row3-col1">Column 1</div>
-        <div class="col-md-4 col-sm-6 mx-auto row3-col2">Column 2</div>
+        <div class="col-md-4 col-sm-6 mx-auto r3c1">Column 1</div>
+        <div class="col-md-4 col-sm-6 mx-auto r3c2">Column 2</div>
     </div>
 </div>
 
